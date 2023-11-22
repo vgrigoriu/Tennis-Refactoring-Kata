@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 public class TennisTest {
 
     private static final String player1Name = "frodo";
-    private static final String player2Name = "player2";
+    private static final String player2Name = "sauron";
 
     public static Stream<Object[]> getAllScores() {
         return Stream.of(new Object[][]{
@@ -32,24 +32,24 @@ public class TennisTest {
                 {3, 1, "Forty-Fifteen"},
                 {1, 3, "Fifteen-Forty"},
                 {4, 1, "Win for " + player1Name},
-                {1, 4, "Win for player2"},
+                {1, 4, "Win for " + player2Name},
 
                 {3, 2, "Forty-Thirty"},
                 {2, 3, "Thirty-Forty"},
                 {4, 2, "Win for " + player1Name},
-                {2, 4, "Win for player2"},
+                {2, 4, "Win for " + player2Name},
 
                 {4, 3, "Advantage " + player1Name},
-                {3, 4, "Advantage player2"},
+                {3, 4, "Advantage " + player2Name},
                 {5, 4, "Advantage " + player1Name},
-                {4, 5, "Advantage player2"},
+                {4, 5, "Advantage " + player2Name},
                 {15, 14, "Advantage " + player1Name},
-                {14, 15, "Advantage player2"},
+                {14, 15, "Advantage " + player2Name},
 
                 {6, 4, "Win for " + player1Name},
-                {4, 6, "Win for player2"},
+                {4, 6, "Win for " + player2Name},
                 {16, 14, "Win for " + player1Name},
-                {14, 16, "Win for player2"},
+                {14, 16, "Win for " + player2Name},
         });
     }
 
